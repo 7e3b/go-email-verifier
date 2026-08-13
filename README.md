@@ -4,7 +4,7 @@ Go package for email address verification with disposable domain detection, DNS 
 
 **## Installation**
 ```bash
-go get github.com/gokpm/go-email-verifier
+go get github.com/7e3b/go-email-verifier
 ```
 
 **## Usage**
@@ -15,7 +15,7 @@ import (
     "context"
     "fmt"
     "time"
-    "github.com/gokpm/go-email-verifier"
+    "github.com/7e3b/go-email-verifier"
 )
 
 func main() {
