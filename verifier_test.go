@@ -444,8 +444,8 @@ func BenchmarkVerifyDNSOnly(b *testing.B) {
 	conf := &Config{ValidateDNS: true}
 	ctx := context.Background()
 
-	b.ResetTimer()
-	for i := 0; i < b.N; i++ {
+	
+	for b.Loop() {
 		Verify(ctx, "test@gmail.com", conf)
 	}
 }
@@ -459,8 +459,8 @@ func BenchmarkVerifyFullValidation(b *testing.B) {
 	}
 	ctx := context.Background()
 
-	b.ResetTimer()
-	for i := 0; i < b.N; i++ {
+	
+	for b.Loop() {
 		Verify(ctx, "test@gmail.com", conf)
 	}
 }
