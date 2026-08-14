@@ -60,3 +60,7 @@ type Config struct {
 - DNS/MX record validation
 - SMTP verification
 - Context-aware with timeout support
+
+## License
+
+See [LICENSE](LICENSE).
